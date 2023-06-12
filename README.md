@@ -1,8 +1,14 @@
 # Churn-Project
-Managing Customer Churn using Data Analytics
+## Managing Customer Churn using Data Analytics
+
+This book "Fighting Churn With Data: Science and strategy for keeping your customers" serves as a detailed guide to the code. You can get more information at:
+
+[The author's You Tube Channel, Fighting Churn With Data Science](https://www.youtube.com/channel/UCGVh5vcL4AAxErNdqJrr_Sw/featured)
+
 <hr>
 
 ## Setup Instructions
+Pre-requisite Setup
 1. Python 3 and the required packages (requirements.txt)
 2. PostgreSQL
 3. PgAdmin - for PostgreSQL database setup
@@ -35,7 +41,7 @@ And enter the name of the new database: <br>
 <img width="360" alt="Screenshot 2023-06-12 at 10 36 38 AM" src="https://github.com/ShreejithSG/Churn-Project/assets/72182153/97b163e8-49e7-4e30-927c-b11698bb173a"> <br>
 <hr>
 
-## Code Setup
+# Code Setup
 
 ## Command Line Setup
 ### Create a Virtual Environment
@@ -134,17 +140,34 @@ This will continue for a while - maybe 10-15 minutes if you ran the full 10,000 
 <hr>
 
 ## Run code listings
+
+<details><summary>Example for running the code</summary>
 Now you are ready to run the code. To do that you use the run_listing function that you previously imported. For example, the following is chapter 2, listing 2:
+  
 ```
 run_churn_listing.run_listing(2,2)
 ```
 ### Running multiple listings and versions
 In some parts of the book you might want to run more than one listing at once. To do this, pass as a list for the listing argument. For example, to run all four chapter 2 churn calculation listings try:
+  
 ```
 run_churn_listing.run_listing(2,[1,2,3,4])
 ```
+  
 Later in the book, some of the listings have multiple versions with different arguments. The run_listing function also takes a version argument. For example, to run a query and plot the results of the events per day for the first event created by the simulation, try the following:
-```
+
+  ```
 run_churn_listing.run_listing(chapter=3,listing=[9,10],version=[1,2,3])
 ```
+  
 That command should save the plots to your output directory.
+</details>
+
+## Command Sheet & Listings' Description
+
+You can follow and use the excel sheet to run the code listings and understand the manipulations that each listing does to the data.
+
+[Fighting Churn Commands](https://docs.google.com/spreadsheets/d/1D1pT3bmg5DkmjJZoNGHXECQwUsLl5nCs0m6OPMLqp_g/edit#gid=0)
+
+* Listings (Sheet 1) : This sheet contains all the code listings in each chapter from the book, along with a brief description of what each listing does. This is will help you understand the code listing that you want to run and what happens to the data after the code is executed.
+* Command Sheet (Sheet 2) : This sheet contains the commands that need to be executed in order to get the expected output.
