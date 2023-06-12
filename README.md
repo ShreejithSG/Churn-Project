@@ -142,6 +142,7 @@ This will continue for a while - maybe 10-15 minutes if you ran the full 10,000 
 ## Run code listings
 
 <details><summary>Example for running the code</summary>
+  <br>
 Now you are ready to run the code. To do that you use the run_listing function that you previously imported. For example, the following is chapter 2, listing 2:
   
 ```
